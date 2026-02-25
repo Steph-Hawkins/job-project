@@ -7,6 +7,7 @@ import { db } from '../Firebase/Firebase'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { FaArrowLeft} from 'react-icons/fa'
+import { toast } from 'react-toastify'
 
 
 const EditJob = () => {
@@ -48,6 +49,7 @@ const EditJob = () => {
     
         }
         submit().then(()=>{
+            toast.success('Job has been edited successfully')
           navigate('/')
         })
       }

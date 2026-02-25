@@ -17,7 +17,7 @@ const Joblistings = ({jobs, title, isHome=false}) => {
             <div className="text-indigo-500"><h2>{job.salary}</h2></div>
             <hr className="mt-2 text-gray-300" />
             <div className="flex gap-x-2 items-center bg-e"> <div className="text-red-500"><FaMapMarker/></div> <h1>{job.location}</h1></div>
-            <Link className="text-sm text-blue-800" to={`/jobs/${job.id}`}><p>More Details</p></Link>
+            <Link className="text-sm text-blue-900 font-bold" to={`/jobs/${job.id}`}><p>More Details</p></Link>
         </li>
     </ul>
    ))}</div>
