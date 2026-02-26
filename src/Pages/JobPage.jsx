@@ -14,7 +14,7 @@ const Jobs = () => {
 
   return (
     <section className="container mt-20 relative">
-       <Link to="/"><div className="absolute top-0 left-4 font-bold text-indigo-500"><FaArrowLeft/></div></Link> 
+       <Link to="/"><div className="absolute top-0 left-4 -mt-3 font-bold text-indigo-500"><FaArrowLeft/></div></Link> 
       <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-4 gap-4 pt-2">{jobs.map((job)=>(
           <ul key={job.id}>
               <li className="px-3 py-4 bg-white shadow-lg shadow-lg/20 text-black rounded flex flex-col gap-y-1.5">

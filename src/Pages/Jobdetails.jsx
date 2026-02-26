@@ -34,7 +34,7 @@ const Jobdetails = () => {
     <div>
     
       <section className="container h-screen mt-20 mb-10 relative">
-         <Link to="/jobs"><div className="absolute top-0 left-4 git font-bold text-indigo-500"><FaArrowLeft/></div></Link> 
+         <Link to="/jobs"><div className="absolute top-0 left-4 -mt-3 font-bold text-indigo-500"><FaArrowLeft/></div></Link> 
         {/* Grid span-3 */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-x-2 max-w-6xl mx-auto pt-3">
         <div className="col-span-3 flex flex-col gap-y-2">
