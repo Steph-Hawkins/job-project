@@ -26,11 +26,11 @@ const Navbar = () => {
             </ul>  
         ))} 
         </div>
-        <button className="md:hidden fixed top-5 right-0" onClick={handleClick}>{isMenuOpen? <X/>:<Menu/> }</button>
-        {isMenuOpen &&(<div className = "flex flex-col gap-y-4 h-screen pr-6" >
+        <button className="md:hidden fixed top-5 right-0 pr-4" onClick={handleClick}>{isMenuOpen? <X/>:<Menu/> }</button>
+        {isMenuOpen &&(<div className = "flex flex-col gap-y-4 h-1/8 items-start pt-7 pr-7 justify-center" >
             {Navs.map((nav, index)=>(
             <ul key={index}>
-                <NavLink className={smallLinks} to={nav.href}><li>{nav.label}</li></NavLink>
+                <Link className={smallLinks} to={nav.href}><li>{nav.label}</li></Link>
             </ul>
         ))}
        </div>)}

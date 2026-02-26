@@ -56,8 +56,8 @@ const EditJob = () => {
     
   return (
     <div>
-      <section  className='container h-min-screen mt-15 relative'>
-        <Link to="/jobs"><div className="absolute top-0 left-4 -mt-3 font-bold text-indigo-500"><FaArrowLeft/></div></Link> 
+      <section  className='container h-min-screen mt-15 relative px-7'>
+        <Link to="/jobs"><div className="absolute top-0 left-4 -mt-3 gitfont-bold text-indigo-500"><FaArrowLeft/></div></Link> 
         <div className='max-w-3xl mx-auto bg-white mb-10 p-3 mt-20 flex flex-col gap-4 rounded'>
           <form onSubmit={handleSubmit}>
           <div className='text-center font-bold'><p>Edit Job</p></div>

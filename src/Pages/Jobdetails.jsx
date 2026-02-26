@@ -33,10 +33,10 @@ const Jobdetails = () => {
   return (
     <div>
     
-      <section className="container h-screen mt-20 mb-10 relative">
+      <section className="container h-screen mt-20 mb-10 relative px-7 py-3.5">
          <Link to="/jobs"><div className="absolute top-0 left-4 -mt-3 font-bold text-indigo-500"><FaArrowLeft/></div></Link> 
         {/* Grid span-3 */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-x-2 max-w-6xl mx-auto pt-3">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-x-2  gap-y-2 max-w-6xl mx-auto pt-3">
         <div className="col-span-3 flex flex-col gap-y-2">
           <div className="bg-white py-3 px-5 rounded flex flex-col gap-y-4">
             <p>{job.type}</p>
