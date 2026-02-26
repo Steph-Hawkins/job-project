@@ -7,7 +7,7 @@ const Joblistings = ({jobs, title, isHome=false}) => {
      const newJob = jobs.slice(0,4)
   return (
     <>
-    <div className="bg-blue-200 pb-7">
+    <div className="bg-blue-200 pb-7 px-7">
         <h1 className="text-white text-5xl text-center">{title}</h1>
         <div className="mx-auto max-w-5xl grid grid-cols-1 gap-y-4 md:grid-cols-4 md:gap-x-4 pt-2">{newJob.map((job)=>(
     <ul key={job.id}>

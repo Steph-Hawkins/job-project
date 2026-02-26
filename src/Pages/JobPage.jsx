@@ -13,7 +13,7 @@ const Jobs = () => {
      
 
   return (
-    <section className="container mt-20 relative">
+    <section className="container mt-20 relative px-7 py-5">
        <Link to="/"><div className="absolute top-0 left-4 -mt-3 font-bold text-indigo-500"><FaArrowLeft/></div></Link> 
       <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-4 gap-4 pt-2">{jobs.map((job)=>(
           <ul key={job.id}>
