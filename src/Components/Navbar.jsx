@@ -16,7 +16,7 @@ const Navbar = () => {
             setisMenuOpen((prev)=>!prev)
         }
   return (
-    <section className="container bg-blue-800 py-4 text-white fixed top-0 z-20">
+    <section className="container bg-blue-700 py-4 text-white fixed top-0 z-20 px-6">
          <div className=" flex justify-between max-w-6xl mx-auto" >
        <Link to="/"><h1> <span className="inline-block text-black font-extrabold text-3xl">Hawkins</span> Jobs</h1></Link> 
         <div className=" hidden md:flex gap-x-4 justify-center items-center">
@@ -27,13 +27,16 @@ const Navbar = () => {
         ))} 
         </div>
         <button className="md:hidden fixed top-5 right-0 pr-4" onClick={handleClick}>{isMenuOpen? <X/>:<Menu/> }</button>
-        {isMenuOpen &&(<div className = "flex flex-col gap-y-4 h-1/8 items-start pt-7 pr-7 justify-center" >
+        <div className={`md:hidden transition-all ease-in-out delay-500 pt-12 ${isMenuOpen?"":"translate-x-100"}`}>
+             {isMenuOpen &&(<div className = {`flex flex-col gap-y-4 h-1/8 items-start pt-7 pr-7 justify-center`} >
             {Navs.map((nav, index)=>(
             <ul key={index}>
-                <Link className={smallLinks} to={nav.href}><li>{nav.label}</li></Link>
+                <Link className={smallLinks} to={nav.href} onClick={()=>{setisMenuOpen(false)}}><li>{nav.label}</li></Link>
             </ul>
         ))}
        </div>)}
+        </div>
+       
     </div>
     </section>
    
